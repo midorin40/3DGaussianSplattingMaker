@@ -1,0 +1,95 @@
+Starting local Gaussian Splatting pipeline for Real Single Image Retest
+Scene: C:\GaussianSplatting\RAW_Data\project-1774191135096-3phdui-Real-Single-Image-Retest
+Model output: C:\GaussianSplatting\RAW_Data\project-1774191135096-3phdui-Real-Single-Image-Retest\model
+Single-image mode generated 7 pseudo view(s) for COLMAP.
+I20260322 23:52:19.440982 98156 feature_extraction.cc:502] === Feature extraction ===
+I20260322 23:52:19.444807 103392 sift.cc:754] Creating SIFT GPU feature extractor
+I20260322 23:52:19.604354 59296 feature_extraction.cc:280] Processed file [1/7]
+I20260322 23:52:19.604584 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-down.png
+I20260322 23:52:19.604610 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.604617 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.604624 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.604635 59296 feature_extraction.cc:302]   Features:        3643 (SIFT)
+I20260322 23:52:19.621490 59296 feature_extraction.cc:280] Processed file [2/7]
+I20260322 23:52:19.621654 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-front.png
+I20260322 23:52:19.621669 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.621679 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.621690 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.621715 59296 feature_extraction.cc:302]   Features:        1552 (SIFT)
+I20260322 23:52:19.648764 59296 feature_extraction.cc:280] Processed file [3/7]
+I20260322 23:52:19.649005 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-left.png
+I20260322 23:52:19.649019 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.649025 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.649036 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.649059 59296 feature_extraction.cc:302]   Features:        4686 (SIFT)
+I20260322 23:52:19.670750 59296 feature_extraction.cc:280] Processed file [4/7]
+I20260322 23:52:19.671086 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-left_soft.png
+I20260322 23:52:19.671099 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.671107 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.671117 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.671138 59296 feature_extraction.cc:302]   Features:        3365 (SIFT)
+I20260322 23:52:19.690271 59296 feature_extraction.cc:280] Processed file [5/7]
+I20260322 23:52:19.690375 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-right.png
+I20260322 23:52:19.690384 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.690391 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.690400 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.690410 59296 feature_extraction.cc:302]   Features:        4611 (SIFT)
+I20260322 23:52:19.709030 59296 feature_extraction.cc:280] Processed file [6/7]
+I20260322 23:52:19.709206 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-right_soft.png
+I20260322 23:52:19.709217 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.709224 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.709230 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.709241 59296 feature_extraction.cc:302]   Features:        3516 (SIFT)
+I20260322 23:52:19.727239 59296 feature_extraction.cc:280] Processed file [7/7]
+I20260322 23:52:19.727339 59296 feature_extraction.cc:283]   Name:            1774191135185-real-test-1774191135185-real-test-up.png
+I20260322 23:52:19.727411 59296 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:52:19.727420 59296 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:52:19.727427 59296 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:52:19.727437 59296 feature_extraction.cc:302]   Features:        3698 (SIFT)
+I20260322 23:52:19.739420 98156 timer.cc:90] Elapsed time: 0.005 [minutes]
+I20260322 23:52:19.891188  3612 feature_matching.cc:195] === Feature matching & geometric verification ===
+I20260322 23:52:19.948168 17712 feature_matching_utils.cc:80] Bind FeatureMatcherWorker to GPU device 0
+I20260322 23:52:19.948394 17712 sift.cc:1547] Creating SIFT GPU feature matcher
+I20260322 23:52:19.948896  3612 pairing.cc:180] Generating exhaustive image pairs...
+I20260322 23:52:19.948928  3612 pairing.cc:213] Processing block [1/1, 1/1]
+I20260322 23:52:19.969780  3612 feature_matching.cc:217] in 0.021s
+I20260322 23:52:19.969837  3612 timer.cc:90] Elapsed time: 0.001 [minutes]
+I20260322 23:52:20.113850 58576 incremental_pipeline.cc:265] Loading database
+I20260322 23:52:20.114630 58576 database_cache.cc:72] Loading rigs...
+I20260322 23:52:20.114680 58576 database_cache.cc:82]  1 in 0.000s
+I20260322 23:52:20.114690 58576 database_cache.cc:90] Loading cameras...
+I20260322 23:52:20.114708 58576 database_cache.cc:108]  1 in 0.000s
+I20260322 23:52:20.114714 58576 database_cache.cc:116] Loading frames...
+I20260322 23:52:20.114751 58576 database_cache.cc:126]  7 in 0.000s
+I20260322 23:52:20.114757 58576 database_cache.cc:134] Loading matches...
+I20260322 23:52:20.114988 58576 database_cache.cc:139]  21 in 0.000s
+I20260322 23:52:20.114997 58576 database_cache.cc:147] Loading images...
+I20260322 23:52:20.115707 58576 database_cache.cc:241]  7 in 0.001s (connected 7, loaded 7)
+I20260322 23:52:20.115726 58576 database_cache.cc:255] Loading pose priors...
+I20260322 23:52:20.115739 58576 database_cache.cc:263]  0 in 0.000s
+I20260322 23:52:20.115745 58576 database_cache.cc:271] Building correspondence graph...
+I20260322 23:52:20.117311 58576 database_cache.cc:300]  in 0.002s (ignored 0)
+I20260322 23:52:20.117328 58576 timer.cc:90] Elapsed time: 0.000 [minutes]
+I20260322 23:52:20.117514 58576 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:52:20.139949 58576 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:52:20.140024 58576 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:52:20.140206 58576 incremental_pipeline.cc:341] => Relaxing the initialization constraints.
+I20260322 23:52:20.140528 58576 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:52:20.162189 58576 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:52:20.162312 58576 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:52:20.162375 58576 incremental_pipeline.cc:354] => Relaxing the initialization constraints.
+I20260322 23:52:20.162645 58576 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:52:20.186115 58576 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:52:20.186186 58576 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:52:20.186445 58576 incremental_pipeline.cc:341] => Relaxing the initialization constraints.
+I20260322 23:52:20.186711 58576 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:52:20.209886 58576 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:52:20.209943 58576 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:52:20.210214 58576 incremental_pipeline.cc:354] => Relaxing the initialization constraints.
+I20260322 23:52:20.210413 58576 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:52:20.232935 58576 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:52:20.233073 58576 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:52:20.233327 58576 timer.cc:90] Elapsed time: 0.002 [minutes]
+E20260322 23:52:20.233349 58576 sfm.cc:279] Failed to create any sparse model
+ERROR:root:Mapper failed with code 1. Exiting.
+ERROR: COLMAP preparation exited with code 1.

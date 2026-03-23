@@ -1,0 +1,84 @@
+Starting local Gaussian Splatting pipeline for Real Single Image Relaxed Mapper 2
+Scene: C:\GaussianSplatting\RAW_Data\project-1774191313707-wsmqey-Real-Single-Image-Relaxed-Mapper-2
+Model output: C:\GaussianSplatting\RAW_Data\project-1774191313707-wsmqey-Real-Single-Image-Relaxed-Mapper-2\model
+Single-image mode generated 7 pseudo view(s) for COLMAP.
+W20260322 23:55:17.933831 45108 feature_extraction.cc:453] Your current options use the maximum number of threads on the machine to extract features. Extracting SIFT features on the CPU can consume a lot of RAM per thread for large images. Consider reducing the maximum image size and/or the first octave or manually limit the number of extraction threads. Ignore this warning, if your machine has sufficient memory for the current settings.
+I20260322 23:55:17.936144 120308 feature_extraction.cc:502] === Feature extraction ===
+I20260322 23:55:17.938237 29580 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.938414  2672 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.938626 29472 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939050 63592 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939236 85856 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939315 105892 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939387 124652 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939655  1280 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939728 120824 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.939943 104564 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940021 112196 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940112 52972 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940206 100236 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940308 20556 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940416 97968 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940509 78800 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940571 64152 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940645 60644 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940696 79572 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940780 76728 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940865 105452 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.940935 52380 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941069 40956 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941160 97296 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941245 118240 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941415 79588 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941663 128840 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941810 109412 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.941875 68216 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.942100 78012 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.942194 24136 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:17.942274 13532 sift.cc:750] Creating Covariant SIFT CPU feature extractor
+I20260322 23:55:19.197751 34772 feature_extraction.cc:280] Processed file [1/7]
+I20260322 23:55:19.197849 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-front.png
+I20260322 23:55:19.197859 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:19.197935 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:19.197952 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:19.197963 34772 feature_extraction.cc:302]   Features:        1803 (SIFT)
+I20260322 23:55:19.873504 34772 feature_extraction.cc:280] Processed file [2/7]
+I20260322 23:55:19.873594 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-down.png
+I20260322 23:55:19.873603 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:19.873609 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:19.873616 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:19.873625 34772 feature_extraction.cc:302]   Features:        4260 (SIFT)
+I20260322 23:55:20.047890 34772 feature_extraction.cc:280] Processed file [3/7]
+I20260322 23:55:20.047999 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-left_soft.png
+I20260322 23:55:20.048022 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:20.048030 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:20.048038 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:20.048049 34772 feature_extraction.cc:302]   Features:        4067 (SIFT)
+I20260322 23:55:20.059959 34772 feature_extraction.cc:280] Processed file [4/7]
+I20260322 23:55:20.060062 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-right_soft.png
+I20260322 23:55:20.060072 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:20.060079 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:20.060088 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:20.060098 34772 feature_extraction.cc:302]   Features:        4050 (SIFT)
+I20260322 23:55:20.117792 34772 feature_extraction.cc:280] Processed file [5/7]
+I20260322 23:55:20.117883 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-up.png
+I20260322 23:55:20.117891 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:20.117897 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:20.117904 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:20.117914 34772 feature_extraction.cc:302]   Features:        4242 (SIFT)
+I20260322 23:55:20.340618 34772 feature_extraction.cc:280] Processed file [6/7]
+I20260322 23:55:20.340716 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-left.png
+I20260322 23:55:20.340725 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:20.340730 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:20.340737 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:20.340746 34772 feature_extraction.cc:302]   Features:        5242 (SIFT)
+I20260322 23:55:20.386527 34772 feature_extraction.cc:280] Processed file [7/7]
+I20260322 23:55:20.386616 34772 feature_extraction.cc:283]   Name:            1774191313771-real-test-1774191313771-real-test-right.png
+I20260322 23:55:20.386624 34772 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:55:20.386631 34772 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:55:20.386637 34772 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:55:20.386647 34772 feature_extraction.cc:302]   Features:        5180 (SIFT)
+I20260322 23:55:20.395659 120308 timer.cc:90] Elapsed time: 0.041 [minutes]
+E20260322 23:55:20.503622 73964 base_option_manager.cc:264] Failed to parse options - unrecognised option '--SiftMatching.guided_matching'.
+ERROR:root:Feature matching failed with code 1. Exiting.
+ERROR: COLMAP preparation exited with code 1.

@@ -1,0 +1,150 @@
+Starting local Gaussian Splatting pipeline for Real Single Image Relaxed Mapper 3
+Scene: C:\GaussianSplatting\RAW_Data\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3
+Model output: C:\GaussianSplatting\RAW_Data\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\model
+Single-image mode generated 7 pseudo view(s) for COLMAP.
+I20260322 23:56:33.080524 69800 feature_extraction.cc:502] === Feature extraction ===
+I20260322 23:56:33.086267 111472 sift.cc:754] Creating SIFT GPU feature extractor
+I20260322 23:56:33.239321 68884 feature_extraction.cc:280] Processed file [1/7]
+I20260322 23:56:33.239798 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-down.png
+I20260322 23:56:33.239853 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.239861 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.239869 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.239882 68884 feature_extraction.cc:302]   Features:        3643 (SIFT)
+I20260322 23:56:33.256736 68884 feature_extraction.cc:280] Processed file [2/7]
+I20260322 23:56:33.256844 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-front.png
+I20260322 23:56:33.256857 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.256866 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.256876 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.256893 68884 feature_extraction.cc:302]   Features:        1552 (SIFT)
+I20260322 23:56:33.282916 68884 feature_extraction.cc:280] Processed file [3/7]
+I20260322 23:56:33.283016 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-left.png
+I20260322 23:56:33.283032 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.283043 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.283054 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.283068 68884 feature_extraction.cc:302]   Features:        4686 (SIFT)
+I20260322 23:56:33.301196 68884 feature_extraction.cc:280] Processed file [4/7]
+I20260322 23:56:33.301292 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-left_soft.png
+I20260322 23:56:33.301302 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.301308 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.301317 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.301331 68884 feature_extraction.cc:302]   Features:        3365 (SIFT)
+I20260322 23:56:33.321255 68884 feature_extraction.cc:280] Processed file [5/7]
+I20260322 23:56:33.321375 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-right.png
+I20260322 23:56:33.321389 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.321395 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.321403 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.321415 68884 feature_extraction.cc:302]   Features:        4611 (SIFT)
+I20260322 23:56:33.340895 68884 feature_extraction.cc:280] Processed file [6/7]
+I20260322 23:56:33.341054 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-right_soft.png
+I20260322 23:56:33.341069 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.341075 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.341083 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.341096 68884 feature_extraction.cc:302]   Features:        3516 (SIFT)
+I20260322 23:56:33.360267 68884 feature_extraction.cc:280] Processed file [7/7]
+I20260322 23:56:33.360486 68884 feature_extraction.cc:283]   Name:            1774191388885-real-test-1774191388885-real-test-up.png
+I20260322 23:56:33.360503 68884 feature_extraction.cc:292]   Dimensions:      1024 x 1024
+I20260322 23:56:33.360509 68884 feature_extraction.cc:295]   Camera:          #1 - SIMPLE_PINHOLE
+I20260322 23:56:33.360517 68884 feature_extraction.cc:298]   Focal Length:    1228.80px
+I20260322 23:56:33.360532 68884 feature_extraction.cc:302]   Features:        3698 (SIFT)
+I20260322 23:56:33.372850 69800 timer.cc:90] Elapsed time: 0.005 [minutes]
+I20260322 23:56:33.521872 114968 feature_matching.cc:195] === Feature matching & geometric verification ===
+I20260322 23:56:33.578787 111524 feature_matching_utils.cc:80] Bind FeatureMatcherWorker to GPU device 0
+I20260322 23:56:33.579008 111524 sift.cc:1547] Creating SIFT GPU feature matcher
+I20260322 23:56:33.579514 114968 pairing.cc:180] Generating exhaustive image pairs...
+I20260322 23:56:33.579546 114968 pairing.cc:213] Processing block [1/1, 1/1]
+I20260322 23:56:33.599878 114968 feature_matching.cc:217] in 0.020s
+I20260322 23:56:33.599945 114968 timer.cc:90] Elapsed time: 0.001 [minutes]
+I20260322 23:56:33.763380 33500 incremental_pipeline.cc:265] Loading database
+I20260322 23:56:33.764016 33500 database_cache.cc:72] Loading rigs...
+I20260322 23:56:33.764062 33500 database_cache.cc:82]  1 in 0.000s
+I20260322 23:56:33.764071 33500 database_cache.cc:90] Loading cameras...
+I20260322 23:56:33.764100 33500 database_cache.cc:108]  1 in 0.000s
+I20260322 23:56:33.764106 33500 database_cache.cc:116] Loading frames...
+I20260322 23:56:33.764140 33500 database_cache.cc:126]  7 in 0.000s
+I20260322 23:56:33.764146 33500 database_cache.cc:134] Loading matches...
+I20260322 23:56:33.764352 33500 database_cache.cc:139]  21 in 0.000s
+I20260322 23:56:33.764360 33500 database_cache.cc:147] Loading images...
+I20260322 23:56:33.765002 33500 database_cache.cc:241]  7 in 0.001s (connected 7, loaded 7)
+I20260322 23:56:33.765015 33500 database_cache.cc:255] Loading pose priors...
+I20260322 23:56:33.765027 33500 database_cache.cc:263]  0 in 0.000s
+I20260322 23:56:33.765032 33500 database_cache.cc:271] Building correspondence graph...
+I20260322 23:56:33.766820 33500 database_cache.cc:300]  in 0.002s (ignored 0)
+I20260322 23:56:33.766837 33500 timer.cc:90] Elapsed time: 0.000 [minutes]
+I20260322 23:56:33.767078 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:33.778489 33500 incremental_pipeline.cc:401] Registering initial image pair #6 and #5
+I20260322 23:56:33.782166 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:33.950531 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:33.951385 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:33.959525 33500 incremental_pipeline.cc:401] Registering initial image pair #6 and #7
+I20260322 23:56:33.962375 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.088528 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:34.088925 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.095570 33500 incremental_pipeline.cc:401] Registering initial image pair #4 and #6
+I20260322 23:56:34.097999 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.205349 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:34.205730 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.211636 33500 incremental_pipeline.cc:401] Registering initial image pair #3 and #5
+I20260322 23:56:34.213278 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.277405 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:34.278191 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.280743 33500 incremental_pipeline.cc:381] => No good initial image pair found.
+I20260322 23:56:34.280786 33500 incremental_pipeline.cc:684] Discarding reconstruction due to no initial pair
+I20260322 23:56:34.280808 33500 incremental_pipeline.cc:341] => Relaxing the initialization constraints.
+I20260322 23:56:34.280898 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.290114 33500 incremental_pipeline.cc:401] Registering initial image pair #6 and #5
+I20260322 23:56:34.293386 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.460276 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:34.461001 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.468818 33500 incremental_pipeline.cc:401] Registering initial image pair #6 and #7
+I20260322 23:56:34.471714 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.596322 33500 incremental_pipeline.cc:675] Discarding reconstruction due to bad initial pair
+I20260322 23:56:34.596657 33500 incremental_pipeline.cc:377] Finding good initial image pair
+I20260322 23:56:34.603739 33500 incremental_pipeline.cc:401] Registering initial image pair #4 and #5
+I20260322 23:56:34.605589 33500 incremental_pipeline.cc:419] Global bundle adjustment
+I20260322 23:56:34.726399 33500 incremental_pipeline.cc:524] Registering image #2 (num_reg_frames=2)
+I20260322 23:56:34.726487 33500 incremental_pipeline.cc:527] => Image sees 258 / 1314 points
+I20260322 23:56:34.741101 33500 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260322 23:56:34.771258 33500 incremental_pipeline.cc:524] Registering image #1 (num_reg_frames=3)
+I20260322 23:56:34.771452 33500 incremental_pipeline.cc:527] => Image sees 122 / 1840 points
+W20260322 23:56:34.802858 33500 bundle_adjustment_ceres.cc:289] Failed to fix Gauge due to insufficient number of fixed points: 2
+I20260322 23:56:34.808875 33500 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260322 23:56:34.828113 33500 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260322 23:56:34.828347 33500 incremental_pipeline.cc:710] Keeping successful reconstruction
+I20260322 23:56:34.831481 33500 timer.cc:90] Elapsed time: 0.018 [minutes]
+I20260322 23:56:34.945344 108600 image.cc:379] === Reading reconstruction ===
+I20260322 23:56:34.947159 108600 image.cc:382] => Reconstruction with 4 images and 1 points
+I20260322 23:56:34.947193 108600 undistorters.cc:164] === Image undistortion ===
+I20260322 23:56:34.948699 108600 undistorters.cc:203] Undistorting image [1/4]
+I20260322 23:56:34.948736 44864 undistorters.cc:238] Copying already distorted image to location: "C:\\GaussianSplatting\\RAW_Data\\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\\images\\1774191388885-real-test-1774191388885-real-test-down.png"
+I20260322 23:56:34.948750 87312 undistorters.cc:238] Copying already distorted image to location: "C:\\GaussianSplatting\\RAW_Data\\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\\images\\1774191388885-real-test-1774191388885-real-test-front.png"
+I20260322 23:56:34.948755 99704 undistorters.cc:238] Copying already distorted image to location: "C:\\GaussianSplatting\\RAW_Data\\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\\images\\1774191388885-real-test-1774191388885-real-test-left_soft.png"
+I20260322 23:56:34.948770 123764 undistorters.cc:238] Copying already distorted image to location: "C:\\GaussianSplatting\\RAW_Data\\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\\images\\1774191388885-real-test-1774191388885-real-test-right.png"
+I20260322 23:56:34.951733 108600 undistorters.cc:203] Undistorting image [2/4]
+I20260322 23:56:34.951790 108600 undistorters.cc:203] Undistorting image [3/4]
+I20260322 23:56:34.951798 108600 undistorters.cc:203] Undistorting image [4/4]
+I20260322 23:56:34.951805 108600 undistorters.cc:211] Writing reconstruction...
+I20260322 23:56:34.954371 108600 undistorters.cc:216] Writing configuration...
+I20260322 23:56:34.955072 108600 undistorters.cc:220] Writing scripts...
+I20260322 23:56:34.955433 108600 timer.cc:90] Elapsed time: 0.000 [minutes]
+Done.
+COLMAP preparation finished. Starting Gaussian Splatting training...
+Optimizing C:\GaussianSplatting\RAW_Data\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\model
+Output folder: C:\GaussianSplatting\RAW_Data\project-1774191388820-xnudys-Real-Single-Image-Relaxed-Mapper-3\model [22/03 23:56:38]
+Tensorboard not available: not logging progress [22/03 23:56:38]
+Reading camera 1/4Reading camera 2/4Reading camera 3/4Reading camera 4/4 [22/03 23:56:38]
+Converting point3d.bin to .ply, will happen only the first time you open the scene. [22/03 23:56:38]
+Loading Training Cameras [22/03 23:56:38]
+Loading Test Cameras [22/03 23:56:38]
+Number of points at initialisation :  1 [22/03 23:56:38]
+Training progress:   0%|          | 0/30000 [00:00<?, ?it/s]Training progress:   0%|          | 0/30000 [00:00<?, ?it/s, Loss=0.7921532, Depth Loss=0.0000000]Training progress:   0%|          | 10/30000 [00:00<07:36, 65.76it/s, Loss=0.7921532, Depth Loss=0.0000000]Training progress:   0%|          | 10/30000 [00:00<07:36, 65.76it/s, Loss=0.7968421, Depth Loss=0.0000000]Training progress:   0%|          | 20/30000 [00:00<07:35, 65.76it/s, Loss=0.7966631, Depth Loss=0.0000000]Training progress:   0%|          | 30/30000 [00:00<07:35, 65.76it/s, Loss=0.7968763, Depth Loss=0.0000000]Training progress:   0%|          | 40/30000 [00:00<07:35, 65.76it/s, Loss=0.7968780, Depth Loss=0.0000000]Training progress:   0%|          | 50/30000 [00:00<02:16, 219.06it/s, Loss=0.7968780, Depth Loss=0.0000000]Training progress:   0%|          | 50/30000 [00:00<02:16, 219.06it/s, Loss=0.7968814, Depth Loss=0.0000000]Training progress:   0%|          | 60/30000 [00:00<02:16, 219.06it/s, Loss=0.7968218, Depth Loss=0.0000000]Training progress:   0%|          | 70/30000 [00:00<02:16, 219.06it/s, Loss=0.7966611, Depth Loss=0.0000000]Training progress:   0%|          | 80/30000 [00:00<02:16, 219.06it/s, Loss=0.7964135, Depth Loss=0.0000000]Training progress:   0%|          | 90/30000 [00:00<02:16, 219.06it/s, Loss=0.7964605, Depth Loss=0.0000000]Training progress:   0%|          | 100/30000 [00:00<01:40, 298.94it/s, Loss=0.7964605, Depth Loss=0.0000000]Training progress:   0%|          | 100/30000 [00:00<01:40, 298.94it/s, Loss=0.7969006, Depth Loss=0.0000000]Training progress:   0%|          | 110/30000 [00:00<01:39, 298.94it/s, Loss=0.7964384, Depth Loss=0.0000000]Training progress:   0%|          | 120/30000 [00:00<01:39, 298.94it/s, Loss=0.7966176, Depth Loss=0.0000000]Training progress:   0%|          | 130/30000 [00:00<01:39, 298.94it/s, Loss=0.7964113, Depth Loss=0.0000000]Training progress:   0%|          | 140/30000 [00:00<01:29, 333.20it/s, Loss=0.7964113, Depth Loss=0.0000000]Training progress:   0%|          | 140/30000 [00:00<01:29, 333.20it/s, Loss=0.7964113, Depth Loss=0.0000000]Training progress:   0%|          | 150/30000 [00:00<01:29, 333.20it/s, Loss=0.7968974, Depth Loss=0.0000000]Training progress:   1%|          | 160/30000 [00:00<01:29, 333.20it/s, Loss=0.7968499, Depth Loss=0.0000000]Training progress:   1%|          | 170/30000 [00:00<01:29, 333.20it/s, Loss=0.7966319, Depth Loss=0.0000000]Training progress:   1%|          | 180/30000 [00:00<01:29, 333.20it/s, Loss=0.7963827, Depth Loss=0.0000000]Training progress:   1%|          | 190/30000 [00:00<01:22, 363.46it/s, Loss=0.7963827, Depth Loss=0.0000000]Training progress:   1%|          | 190/30000 [00:00<01:22, 363.46it/s, Loss=0.7968379, Depth Loss=0.0000000]Training progress:   1%|          | 200/30000 [00:00<01:21, 363.46it/s, Loss=0.7969008, Depth Loss=0.0000000]Training progress:   1%|          | 210/30000 [00:00<01:21, 363.46it/s, Loss=0.7969759, Depth Loss=0.0000000]Training progress:   1%|          | 220/30000 [00:00<01:21, 363.46it/s, Loss=0.7970590, Depth Loss=0.0000000]Training progress:   1%|          | 230/30000 [00:00<01:19, 373.15it/s, Loss=0.7970590, Depth Loss=0.0000000]Training progress:   1%|          | 230/30000 [00:00<01:19, 373.15it/s, Loss=0.7964035, Depth Loss=0.0000000]Training progress:   1%|          | 240/30000 [00:00<01:19, 373.15it/s, Loss=0.7963469, Depth Loss=0.0000000]Training progress:   1%|          | 250/30000 [00:00<01:19, 373.15it/s, Loss=0.7966561, Depth Loss=0.0000000]Training progress:   1%|          | 260/30000 [00:00<01:19, 373.15it/s, Loss=0.7969772, Depth Loss=0.0000000]Training progress:   1%|          | 270/30000 [00:00<01:19, 373.15it/s, Loss=0.7965962, Depth Loss=0.0000000]Training progress:   1%|          | 280/30000 [00:00<01:17, 384.37it/s, Loss=0.7965962, Depth Loss=0.0000000]Training progress:   1%|          | 280/30000 [00:00<01:17, 384.37it/s, Loss=0.7969698, Depth Loss=0.0000000]Training progress:   1%|          | 290/30000 [00:00<01:17, 384.37it/s, Loss=0.7964540, Depth Loss=0.0000000]Training progress:   1%|1         | 300/30000 [00:00<01:17, 384.37it/s, Loss=0.7970421, Depth Loss=0.0000000]Training progress:   1%|1         | 310/30000 [00:00<01:17, 384.37it/s, Loss=0.7967889, Depth Loss=0.0000000]Training progress:   1%|1         | 320/30000 [00:00<01:17, 384.37it/s, Loss=0.7967916, Depth Loss=0.0000000]Training progress:   1%|1         | 330/30000 [00:00<01:15, 393.12it/s, Loss=0.7967916, Depth Loss=0.0000000]Training progress:   1%|1         | 330/30000 [00:00<01:15, 393.12it/s, Loss=0.7969671, Depth Loss=0.0000000]Training progress:   1%|1         | 340/30000 [00:01<01:15, 393.12it/s, Loss=0.7968808, Depth Loss=0.0000000]Training progress:   1%|1         | 350/30000 [00:01<01:15, 393.12it/s, Loss=0.7964759, Depth Loss=0.0000000]Training progress:   1%|1         | 360/30000 [00:01<01:15, 393.12it/s, Loss=0.7965531, Depth Loss=0.0000000]Training progress:   1%|1         | 370/30000 [00:01<01:16, 389.28it/s, Loss=0.7965531, Depth Loss=0.0000000]Training progress:   1%|1         | 370/30000 [00:01<01:16, 389.28it/s, Loss=0.7969758, Depth Loss=0.0000000]Training progress:   1%|1         | 380/30000 [00:01<01:16, 389.28it/s, Loss=0.7970532, Depth Loss=0.0000000]Training progress:   1%|1         | 390/30000 [00:01<01:16, 389.28it/s, Loss=0.7964090, Depth Loss=0.0000000]Training progress:   1%|1         | 400/30000 [00:01<01:16, 389.28it/s, Loss=0.7966049, Depth Loss=0.0000000]Training progress:   1%|1         | 410/30000 [00:01<01:16, 388.16it/s, Loss=0.7966049, Depth Loss=0.0000000]Training progress:   1%|1         | 410/30000 [00:01<01:16, 388.16it/s, Loss=0.7968186, Depth Loss=0.0000000]Training progress:   1%|1         | 420/30000 [00:01<01:16, 388.16it/s, Loss=0.7971077, Depth Loss=0.0000000]Training progress:   1%|1         | 430/30000 [00:01<01:16, 388.16it/s, Loss=0.7969088, Depth Loss=0.0000000]Training progress:   1%|1         | 440/30000 [00:01<01:16, 388.16it/s, Loss=0.7966092, Depth Loss=0.0000000]Training progress:   2%|1         | 450/30000 [00:01<01:15, 390.20it/s, Loss=0.7966092, Depth Loss=0.0000000]Training progress:   2%|1         | 450/30000 [00:01<01:15, 390.20it/s, Loss=0.7968442, Depth Loss=0.0000000]Training progress:   2%|1         | 460/30000 [00:01<01:15, 390.20it/s, Loss=0.7968653, Depth Loss=0.0000000]Training progress:   2%|1         | 470/30000 [00:01<01:15, 390.20it/s, Loss=0.7969011, Depth Loss=0.0000000]Training progress:   2%|1         | 480/30000 [00:01<01:15, 390.20it/s, Loss=0.7970265, Depth Loss=0.0000000]Training progress:   2%|1         | 490/30000 [00:01<01:15, 390.20it/s, Loss=0.7968518, Depth Loss=0.0000000]Training progress:   2%|1         | 500/30000 [00:01<01:14, 393.79it/s, Loss=0.7968518, Depth Loss=0.0000000]Training progress:   2%|1         | 500/30000 [00:01<01:14, 393.79it/s, Loss=0.7969969, Depth Loss=0.0000000]Training progress:   2%|1         | 510/30000 [00:01<01:14, 393.79it/s, Loss=0.7968141, Depth Loss=0.0000000]Training progress:   2%|1         | 520/30000 [00:01<01:14, 393.79it/s, Loss=0.7968020, Depth Loss=0.0000000]Training progress:   2%|1         | 530/30000 [00:01<01:14, 393.79it/s, Loss=0.7964398, Depth Loss=0.0000000]Training progress:   2%|1         | 540/30000 [00:01<01:14, 394.30it/s, Loss=0.7964398, Depth Loss=0.0000000]Training progress:   2%|1         | 540/30000 [00:01<01:14, 394.30it/s, Loss=0.7969753, Depth Loss=0.0000000]Training progress:   2%|1         | 550/30000 [00:01<01:14, 394.30it/s, Loss=0.7967101, Depth Loss=0.0000000]Training progress:   2%|1         | 560/30000 [00:01<01:14, 394.30it/s, Loss=0.7968728, Depth Loss=0.0000000]Training progress:   2%|1         | 570/30000 [00:01<01:14, 394.30it/s, Loss=0.7966595, Depth Loss=0.0000000]Training progress:   2%|1         | 580/30000 [00:01<01:14, 394.30it/s, Loss=0.7969313, Depth Loss=0.0000000]Training progress:   2%|1         | 590/30000 [00:01<01:13, 398.18it/s, Loss=0.7969313, Depth Loss=0.0000000]Training progress:   2%|1         | 590/30000 [00:01<01:13, 398.18it/s, Loss=0.7964889, Depth Loss=0.0000000]Traceback (most recent call last):
+  File "C:\GaussianSplatting\gaussian-splatting\train.py", line 282, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint, args.debug_from)
+  File "C:\GaussianSplatting\gaussian-splatting\train.py", line 111, in training
+    render_pkg = render(viewpoint_cam, gaussians, pipe, bg, use_trained_exp=dataset.train_test_exp, separate_sh=SPARSE_ADAM_AVAILABLE)
+  File "C:\GaussianSplatting\gaussian-splatting\gaussian_renderer\__init__.py", line 85, in render
+    shs = pc.get_features
+  File "C:\GaussianSplatting\gaussian-splatting\scene\gaussian_model.py", line 118, in get_features
+    return torch.cat((features_dc, features_rest), dim=1)
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 1 but got size 15 for tensor number 1 in the list.
+Training progress:   2%|2         | 600/30000 [00:01<01:31, 320.38it/s, Loss=0.7964889, Depth Loss=0.0000000]
+ERROR: Training exited with code 1.

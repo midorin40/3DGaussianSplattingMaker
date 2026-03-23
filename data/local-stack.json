@@ -1,0 +1,9 @@
+{
+  "gaussianSplattingRoot": "C:\\GaussianSplatting",
+  "repoPath": "C:\\GaussianSplatting\\gaussian-splatting",
+  "rawDataPath": "C:\\GaussianSplatting\\RAW_Data",
+  "envPath": "C:\\GaussianSplatting\\envs\\gaussian_splatting_cuda12",
+  "scriptsPath": "C:\\GaussianSplatting\\scripts",
+  "ffmpegAvailable": true,
+  "videoUploadStatus": "auto-frame-extraction"
+}

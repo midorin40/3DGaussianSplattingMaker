@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GaussianSplattingMaker</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">GaussianSplattingMaker</p>
+          <h1>画像をアップロードして、Gaussian Splatting の生成フローを進める。</h1>
+          <p class="lede">
+            複数画像モードは、このPC上の COLMAP と Gaussian Splatting スタックへ接続されています。
+            単画像モードは UI とジョブ管理までは対応していますが、実際の単画像 GS 生成エンジンはまだ未接続です。複数画像モードでは動画1本をアップロードすると自動でフレーム抽出します。
+          </p>
+          <div class="hero-tags">
+            <span>Multi Image: Connected</span>
+            <span>Single Image: Pseudo Multi-View</span>
+            <span>Video Upload: Auto Frame Extraction</span>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-card accent">
+            <p class="panel-label">Connected Stack</p>
+            <strong>COLMAP + graphdeco-inria/gaussian-splatting</strong>
+            <p>複数画像モードではローカルスクリプトを実行して GS 学習へ進みます。</p>
+          </div>
+          <div class="panel-card">
+            <p class="panel-label">Single Image Note</p>
+            <p>単画像では擬似的な別角度画像を生成してから GS 学習へ渡します。</p>
+          </div>
+        </aside>
+      </header>
+
+      <main class="workspace">
+        <section class="card composer">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Project Setup</p>
+              <h2>新しい GS プロジェクト</h2>
+            </div>
+            <button id="demo-button" class="ghost-button" type="button">デモ設定</button>
+          </div>
+
+          <form id="project-form" class="project-form">
+            <label class="full">
+              <span>プロジェクト名</span>
+              <input name="name" placeholder="Sneaker Turntable Scan" required />
+            </label>
+
+            <label>
+              <span>モード</span>
+              <select name="mode">
+                <option value="single">単画像モード</option>
+                <option value="multi">複数画像モード</option>
+              </select>
+            </label>
+
+            <label>
+              <span>被写体タイプ</span>
+              <select name="subjectType">
+                <option value="product">商品</option>
+                <option value="figure">フィギュア</option>
+                <option value="person">人物</option>
+                <option value="room">室内</option>
+                <option value="other">その他</option>
+              </select>
+            </label>
+
+            <label>
+              <span>品質プリセット</span>
+              <select name="qualityPreset">
+                <option value="fast">高速</option>
+                <option value="standard" selected>標準</option>
+                <option value="high">高品質</option>
+              </select>
+            </label>
+
+            <label>
+              <span>背景処理</span>
+              <select name="backgroundMode">
+                <option value="keep">背景を保持</option>
+                <option value="remove">背景除去を優先</option>
+              </select>
+            </label>
+
+            <label class="full">
+              <span>メモ</span>
+              <textarea name="notes" rows="4" placeholder="用途、被写体の状態、品質上の注意点など"></textarea>
+            </label>
+          </form>
+
+          <div class="upload-panel">
+            <div class="upload-copy">
+              <p class="section-kicker">Assets</p>
+              <h3>画像を追加</h3>
+              <p id="upload-guidance" class="muted">単画像モードでは 1 枚の画像から擬似複数視点を生成し、複数画像モードでは複数枚画像または動画を使います。</p>
+            </div>
+            <label class="upload-dropzone">
+              <input id="file-input" type="file" accept="image/png,image/jpeg,image/webp,video/mp4,video/quicktime,video/webm" multiple />
+              <span>ここに画像をドロップ、またはクリックして選択</span>
+              <small>対応形式: JPG / PNG / WEBP / MP4 / MOV / WEBM</small>
+            </label>
+            <div id="selected-files" class="selected-files empty-state">まだファイルは選択されていません。</div>
+          </div>
+
+          <div class="action-row">
+            <button id="create-project" class="primary-button" type="button">プロジェクトを作成</button>
+            <button id="start-job" class="secondary-button" type="button">GS 生成を開始</button>
+          </div>
+        </section>
+
+        <section class="results-grid">
+          <article class="card result-card">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Current Project</p>
+                <h2>現在の状態</h2>
+              </div>
+            </div>
+            <div id="project-summary" class="summary empty-state">まだプロジェクトは作成されていません。</div>
+          </article>
+
+          <article class="card result-card">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Generation Job</p>
+                <h2>ジョブ進行状況</h2>
+              </div>
+            </div>
+            <div class="progress-card">
+              <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+              <div class="progress-meta">
+                <strong id="progress-label">未開始</strong>
+                <span id="progress-value">0%</span>
+              </div>
+              <ul id="stage-list" class="stage-list empty-state">ジョブを開始するとステージが表示されます。</ul>
+            </div>
+          </article>
+
+          <article class="card result-card wide">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Execution Log</p>
+                <h2>ローカル実行ログ</h2>
+              </div>
+            </div>
+            <pre id="job-log" class="job-log empty-state">まだログはありません。</pre>
+          </article>
+
+          <article class="card result-card wide">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Input Assets</p>
+                <h2>アップロード済み画像</h2>
+              </div>
+            </div>
+            <div id="asset-gallery" class="asset-gallery empty-state">アップロードされた画像がここに表示されます。</div>
+          </article>
+
+          <article class="card result-card wide">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">GS Output</p>
+                <h2>生成結果</h2>
+              </div>
+            </div>
+            <div id="output-panel" class="output-panel empty-state">まだ生成結果はありません。</div>
+          </article>
+
+          <article class="card result-card wide">
+            <div class="section-head">
+              <div>
+                <p class="section-kicker">Project History</p>
+                <h2>保存済みプロジェクト</h2>
+              </div>
+              <button id="refresh-projects" class="ghost-button" type="button">更新</button>
+            </div>
+            <div id="projects" class="project-list empty-state">保存済みプロジェクトはまだありません。</div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <template id="selected-file-template">
+      <article class="selected-file">
+        <strong class="file-name"></strong>
+        <span class="file-meta"></span>
+      </article>
+    </template>
+
+    <template id="asset-card-template">
+      <article class="asset-card">
+        <img class="asset-image" alt="uploaded preview" />
+        <div class="asset-body">
+          <strong class="asset-name"></strong>
+          <span class="asset-meta"></span>
+        </div>
+      </article>
+    </template>
+
+    <template id="project-card-template">
+      <article class="saved-project">
+        <div class="saved-topline">
+          <strong class="saved-title"></strong>
+          <span class="saved-date"></span>
+        </div>
+        <p class="saved-meta"></p>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
+
+

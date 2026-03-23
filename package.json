@@ -1,0 +1,9 @@
+{
+  "name": "gaussian-splatting-maker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A lightweight web app for planning Gaussian Splatting projects with Gemini and Codex.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,493 @@
+[
+  {
+    "id": "project-1774191388820-xnudys",
+    "name": "Real Single Image Relaxed Mapper 3",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "real uploaded image retest with rewritten single-image mapper",
+    "createdAt": "2026-03-22T14:56:28.820Z",
+    "updatedAt": "2026-03-22T14:56:40.967Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774191388886-12z5vx",
+        "name": "real-test.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:56:28.886Z",
+        "previewUrl": "/uploads/project-1774191388820-xnudys/1774191388885-real-test.png",
+        "storedName": "1774191388885-real-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774191313707-wsmqey",
+    "name": "Real Single Image Relaxed Mapper 2",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "real uploaded image retest with compatible relaxed mapper",
+    "createdAt": "2026-03-22T14:55:13.707Z",
+    "updatedAt": "2026-03-22T14:55:20.575Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774191313772-eg0hk5",
+        "name": "real-test.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:55:13.772Z",
+        "previewUrl": "/uploads/project-1774191313707-wsmqey/1774191313771-real-test.png",
+        "storedName": "1774191313771-real-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774191264650-el8qjv",
+    "name": "Real Single Image Relaxed Mapper",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "real uploaded image retest with relaxed mapper",
+    "createdAt": "2026-03-22T14:54:24.650Z",
+    "updatedAt": "2026-03-22T14:54:31.719Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774191264720-heytz8",
+        "name": "real-test.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:54:24.720Z",
+        "previewUrl": "/uploads/project-1774191264650-el8qjv/1774191264719-real-test.png",
+        "storedName": "1774191264719-real-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774191135096-3phdui",
+    "name": "Real Single Image Retest",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "real uploaded image retest after generator update",
+    "createdAt": "2026-03-22T14:52:15.096Z",
+    "updatedAt": "2026-03-22T14:52:20.306Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774191135187-mf3ms1",
+        "name": "real-test.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:52:15.187Z",
+        "previewUrl": "/uploads/project-1774191135096-3phdui/1774191135185-real-test.png",
+        "storedName": "1774191135185-real-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774191096171-vrl1zr",
+    "name": "Single Image Layered Test",
+    "mode": "single",
+    "subjectType": "product",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "layered pseudo depth verification",
+    "createdAt": "2026-03-22T14:51:36.171Z",
+    "updatedAt": "2026-03-22T14:51:38.140Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774191096227-4t7w4y",
+        "name": "single-test.png",
+        "size": 450,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:51:36.227Z",
+        "previewUrl": "/uploads/project-1774191096171-vrl1zr/1774191096227-single-test.png",
+        "storedName": "1774191096227-single-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774190721053-8gfxz4",
+    "name": "Single Image No Resize Test",
+    "mode": "single",
+    "subjectType": "product",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "single image no-resize verification",
+    "createdAt": "2026-03-22T14:45:21.053Z",
+    "updatedAt": "2026-03-22T14:45:22.992Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774190721103-wfarqw",
+        "name": "single-test.png",
+        "size": 450,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:45:21.103Z",
+        "previewUrl": "/uploads/project-1774190721053-8gfxz4/1774190721102-single-test.png",
+        "storedName": "1774190721102-single-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774189826410-8vf8o8",
+    "name": "Lidatest",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "回転台で撮影した複数画像、または短い動画からローカル GS スタックを実行したい。",
+    "createdAt": "2026-03-22T14:30:26.410Z",
+    "updatedAt": "2026-03-22T16:21:23.098Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774189826440-8o3y8i",
+        "name": "1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:30:26.440Z",
+        "previewUrl": "/uploads/project-1774189826410-8vf8o8/1774189826439-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "storedName": "1774189826439-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-22T16:21:23.098Z",
+      "quality": "Synthetic Multi-View",
+      "summary": "A single uploaded image was expanded into pseudo multi-view inputs and exported as a .splat package.",
+      "viewer": {
+        "cameraMode": "orbit-artwork",
+        "recommendedSpinSeconds": 9,
+        "previewAssets": [
+          "/uploads/project-1774189826410-8vf8o8/1774189826439-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+        ]
+      },
+      "packageInfo": {
+        "mode": "single",
+        "assetCount": 1,
+        "usedVideoInput": false,
+        "extractedFrameCount": 0,
+        "status": "scaffold-ready",
+        "engine": "single-image-scaffold",
+        "exportTargets": [
+          "preview"
+        ],
+        "sourceJobId": "job-1774196117584-v1lz00",
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774189826410-8vf8o8-Lidatest",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774189826410-8vf8o8-Lidatest\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774189826410-8vf8o8-Lidatest\\model\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774189826410-8vf8o8.splat",
+        "splatUrl": "/exports/project-1774189826410-8vf8o8.splat"
+      },
+      "warnings": [
+        "Single-image mode generated 7 pseudo view(s) before reconstruction.",
+        "Single-image mode infers side views from one source image, so hidden surfaces are approximated rather than observed.",
+        "Background removal can help isolate flat artwork before pseudo view generation."
+      ]
+    }
+  },
+  {
+    "id": "project-1774189588010-3orkwp",
+    "name": "Single Image Pseudo View Test",
+    "mode": "single",
+    "subjectType": "product",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "single image pseudo multiview verification",
+    "createdAt": "2026-03-22T14:26:28.010Z",
+    "updatedAt": "2026-03-22T14:26:29.894Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774189588032-yxy98s",
+        "name": "single-test.png",
+        "size": 450,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T14:26:28.032Z",
+        "previewUrl": "/uploads/project-1774189588010-3orkwp/1774189588032-single-test.png",
+        "storedName": "1774189588032-single-test.png"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774174212944-4v6x0x",
+    "name": "Video Log Test 2",
+    "mode": "multi",
+    "subjectType": "product",
+    "qualityPreset": "fast",
+    "backgroundMode": "keep",
+    "notes": "log verification 2",
+    "createdAt": "2026-03-22T10:10:12.944Z",
+    "updatedAt": "2026-03-22T10:10:14.160Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774174212999-8gi340",
+        "name": "test-video.mp4",
+        "size": 10126,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-22T10:10:12.999Z",
+        "previewUrl": "/uploads/project-1774174212944-4v6x0x/1774174212998-test-video.mp4",
+        "storedName": "1774174212998-test-video.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774174174985-85t2k3",
+    "name": "Video Log Test",
+    "mode": "multi",
+    "subjectType": "product",
+    "qualityPreset": "fast",
+    "backgroundMode": "keep",
+    "notes": "log verification",
+    "createdAt": "2026-03-22T10:09:34.985Z",
+    "updatedAt": "2026-03-22T10:09:36.205Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774174175027-hanopa",
+        "name": "test-video.mp4",
+        "size": 10126,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-22T10:09:35.027Z",
+        "previewUrl": "/uploads/project-1774174174985-85t2k3/1774174175027-test-video.mp4",
+        "storedName": "1774174175027-test-video.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774174098926-fjxsdm",
+    "name": "Video Upload Test 2",
+    "mode": "multi",
+    "subjectType": "product",
+    "qualityPreset": "fast",
+    "backgroundMode": "keep",
+    "notes": "API video upload verification after restart",
+    "createdAt": "2026-03-22T10:08:18.926Z",
+    "updatedAt": "2026-03-22T10:08:20.242Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774174098947-04syto",
+        "name": "test-video.mp4",
+        "size": 10126,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-22T10:08:18.947Z",
+        "previewUrl": "/uploads/project-1774174098926-fjxsdm/1774174098947-test-video.mp4",
+        "storedName": "1774174098947-test-video.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774174026385-todp4y",
+    "name": "Video Upload Test",
+    "mode": "multi",
+    "subjectType": "product",
+    "qualityPreset": "fast",
+    "backgroundMode": "keep",
+    "notes": "API video upload verification",
+    "createdAt": "2026-03-22T10:07:06.385Z",
+    "updatedAt": "2026-03-22T10:07:06.434Z",
+    "status": "draft",
+    "assets": [
+      {
+        "id": "asset-1774174026434-wnhs5m",
+        "name": "test-video.mp4",
+        "size": 10126,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-22T10:07:06.434Z",
+        "previewUrl": "/uploads/project-1774174026385-todp4y/1774174026433-test-video.mp4",
+        "storedName": "1774174026433-test-video.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774172495685-qwodnd",
+    "name": "Video Check",
+    "mode": "multi",
+    "subjectType": "product",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "notes": "video frame extraction check",
+    "createdAt": "2026-03-22T09:41:35.685Z",
+    "updatedAt": "2026-03-22T09:41:35.685Z",
+    "status": "draft",
+    "assets": [],
+    "output": null
+  },
+  {
+    "id": "project-1774171389489-7ejk5g",
+    "name": "Lidatest",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "",
+    "createdAt": "2026-03-22T09:23:09.489Z",
+    "updatedAt": "2026-03-22T09:23:10.978Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774171389519-t5v5e6",
+        "name": "1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T09:23:09.519Z",
+        "previewUrl": "/uploads/project-1774171389489-7ejk5g/1774171389518-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "storedName": "1774171389518-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-22T09:23:10.978Z",
+      "quality": "Scaffolded",
+      "summary": "The project has been staged for future single-image Gaussian Splatting integration.",
+      "viewer": {
+        "cameraMode": "orbit-tight",
+        "recommendedSpinSeconds": 10,
+        "previewAssets": [
+          "/uploads/project-1774171389489-7ejk5g/1774171389518-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+        ]
+      },
+      "packageInfo": {
+        "mode": "single",
+        "assetCount": 1,
+        "status": "scaffold-ready",
+        "engine": "single-image-scaffold",
+        "exportTargets": [
+          "preview"
+        ],
+        "sourceJobId": "job-1774171390977-4t1zqa",
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774171389489-7ejk5g-Lidatest",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774171389489-7ejk5g-Lidatest\\model",
+        "plyPath": null,
+        "splatPath": null,
+        "splatUrl": null
+      },
+      "warnings": [
+        "Single-image mode is staged in the app, but an actual single-image Gaussian Splatting engine is not wired yet.",
+        "You can upload and manage the job, but the real 3D reconstruction path still needs a dedicated single-image model."
+      ]
+    }
+  },
+  {
+    "id": "project-1774169731535-4bol8e",
+    "name": "LidaTest",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "remove",
+    "notes": "",
+    "createdAt": "2026-03-22T08:55:31.535Z",
+    "updatedAt": "2026-03-22T08:55:34.284Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774169731566-onc57x",
+        "name": "1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T08:55:31.566Z",
+        "previewUrl": "/uploads/project-1774169731535-4bol8e/1774169731565-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "storedName": "1774169731565-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-22T08:55:34.284Z",
+      "quality": "Scaffolded",
+      "summary": "The project has been staged for future single-image Gaussian Splatting integration.",
+      "viewer": {
+        "cameraMode": "orbit-tight",
+        "recommendedSpinSeconds": 10,
+        "previewAssets": [
+          "/uploads/project-1774169731535-4bol8e/1774169731565-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+        ]
+      },
+      "packageInfo": {
+        "mode": "single",
+        "assetCount": 1,
+        "status": "scaffold-ready",
+        "engine": "single-image-scaffold",
+        "exportTargets": [
+          "preview"
+        ],
+        "sourceJobId": "job-1774169734282-zul5y8",
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774169731535-4bol8e-LidaTest",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774169731535-4bol8e-LidaTest\\model"
+      },
+      "warnings": [
+        "Single-image mode is staged in the app, but an actual single-image Gaussian Splatting engine is not wired yet.",
+        "You can upload and manage the job, but the real 3D reconstruction path still needs a dedicated single-image model."
+      ]
+    }
+  },
+  {
+    "id": "project-1774169510888-qfs94s",
+    "name": "Lidatest",
+    "mode": "single",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "remove",
+    "notes": "",
+    "createdAt": "2026-03-22T08:51:50.888Z",
+    "updatedAt": "2026-03-22T08:51:54.855Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774169510916-5k3ph9",
+        "name": "1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "size": 1687639,
+        "mimeType": "image/png",
+        "uploadedAt": "2026-03-22T08:51:50.916Z",
+        "previewUrl": "/uploads/project-1774169510888-qfs94s/1774169510915-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png",
+        "storedName": "1774169510915-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-22T08:51:54.855Z",
+      "quality": "Scaffolded",
+      "summary": "The project has been staged for future single-image Gaussian Splatting integration.",
+      "viewer": {
+        "cameraMode": "orbit-tight",
+        "recommendedSpinSeconds": 10,
+        "previewAssets": [
+          "/uploads/project-1774169510888-qfs94s/1774169510915-1719ba4f-3bc9-44be-b4b8-8120980b30b3.png"
+        ]
+      },
+      "packageInfo": {
+        "mode": "single",
+        "assetCount": 1,
+        "status": "scaffold-ready",
+        "engine": "single-image-scaffold",
+        "exportTargets": [
+          "preview"
+        ],
+        "sourceJobId": "job-1774169514854-7mtrgh",
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774169510888-qfs94s-Lidatest",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774169510888-qfs94s-Lidatest\\model"
+      },
+      "warnings": [
+        "Single-image mode is staged in the app, but an actual single-image Gaussian Splatting engine is not wired yet.",
+        "You can upload and manage the job, but the real 3D reconstruction path still needs a dedicated single-image model."
+      ]
+    }
+  }
+]

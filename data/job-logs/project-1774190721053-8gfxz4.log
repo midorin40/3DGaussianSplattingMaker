@@ -1,0 +1,76 @@
+Starting local Gaussian Splatting pipeline for Single Image No Resize Test
+Scene: C:\GaussianSplatting\RAW_Data\project-1774190721053-8gfxz4-Single-Image-No-Resize-Test
+Model output: C:\GaussianSplatting\RAW_Data\project-1774190721053-8gfxz4-Single-Image-No-Resize-Test\model
+Single-image mode generated 7 pseudo view(s) for COLMAP.
+I20260322 23:45:22.411794 31172 feature_extraction.cc:502] === Feature extraction ===
+I20260322 23:45:22.414250 105220 sift.cc:754] Creating SIFT GPU feature extractor
+I20260322 23:45:22.499115 40652 feature_extraction.cc:280] Processed file [1/7]
+I20260322 23:45:22.499430 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-down.png
+I20260322 23:45:22.499458 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.499466 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.499473 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.499484 40652 feature_extraction.cc:302]   Features:        34 (SIFT)
+I20260322 23:45:22.504835 40652 feature_extraction.cc:280] Processed file [2/7]
+I20260322 23:45:22.504891 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-front.png
+I20260322 23:45:22.504899 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.504905 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.504911 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.504920 40652 feature_extraction.cc:302]   Features:        36 (SIFT)
+I20260322 23:45:22.509879 40652 feature_extraction.cc:280] Processed file [3/7]
+I20260322 23:45:22.509955 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-left.png
+I20260322 23:45:22.509963 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.509969 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.509978 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.509987 40652 feature_extraction.cc:302]   Features:        30 (SIFT)
+I20260322 23:45:22.514620 40652 feature_extraction.cc:280] Processed file [4/7]
+I20260322 23:45:22.514679 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-left_soft.png
+I20260322 23:45:22.514690 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.514696 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.514703 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.514711 40652 feature_extraction.cc:302]   Features:        22 (SIFT)
+I20260322 23:45:22.520244 40652 feature_extraction.cc:280] Processed file [5/7]
+I20260322 23:45:22.520306 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-right.png
+I20260322 23:45:22.520314 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.520320 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.520326 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.520335 40652 feature_extraction.cc:302]   Features:        30 (SIFT)
+I20260322 23:45:22.525344 40652 feature_extraction.cc:280] Processed file [6/7]
+I20260322 23:45:22.525393 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-right_soft.png
+I20260322 23:45:22.525401 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.525407 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.525413 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.525421 40652 feature_extraction.cc:302]   Features:        20 (SIFT)
+I20260322 23:45:22.530207 40652 feature_extraction.cc:280] Processed file [7/7]
+I20260322 23:45:22.530255 40652 feature_extraction.cc:283]   Name:            1774190721102-single-test-1774190721102-single-test-up.png
+I20260322 23:45:22.530304 40652 feature_extraction.cc:292]   Dimensions:      128 x 128
+I20260322 23:45:22.530312 40652 feature_extraction.cc:295]   Camera:          #1 - OPENCV
+I20260322 23:45:22.530318 40652 feature_extraction.cc:298]   Focal Length:    153.60px
+I20260322 23:45:22.530326 40652 feature_extraction.cc:302]   Features:        32 (SIFT)
+I20260322 23:45:22.531900 31172 timer.cc:90] Elapsed time: 0.002 [minutes]
+I20260322 23:45:22.703921 12704 feature_matching.cc:195] === Feature matching & geometric verification ===
+I20260322 23:45:22.769455 34968 feature_matching_utils.cc:80] Bind FeatureMatcherWorker to GPU device 0
+I20260322 23:45:22.769792 34968 sift.cc:1547] Creating SIFT GPU feature matcher
+I20260322 23:45:22.770323 12704 pairing.cc:180] Generating exhaustive image pairs...
+I20260322 23:45:22.770365 12704 pairing.cc:213] Processing block [1/1, 1/1]
+I20260322 23:45:22.774898 12704 feature_matching.cc:217] in 0.005s
+I20260322 23:45:22.774931 12704 timer.cc:90] Elapsed time: 0.001 [minutes]
+I20260322 23:45:22.917438 49604 incremental_pipeline.cc:265] Loading database
+I20260322 23:45:22.918309 49604 database_cache.cc:72] Loading rigs...
+I20260322 23:45:22.918411 49604 database_cache.cc:82]  1 in 0.000s
+I20260322 23:45:22.918423 49604 database_cache.cc:90] Loading cameras...
+I20260322 23:45:22.918441 49604 database_cache.cc:108]  1 in 0.000s
+I20260322 23:45:22.918447 49604 database_cache.cc:116] Loading frames...
+I20260322 23:45:22.918493 49604 database_cache.cc:126]  7 in 0.000s
+I20260322 23:45:22.918499 49604 database_cache.cc:134] Loading matches...
+I20260322 23:45:22.918512 49604 database_cache.cc:139]  0 in 0.000s
+I20260322 23:45:22.918518 49604 database_cache.cc:147] Loading images...
+I20260322 23:45:22.918555 49604 database_cache.cc:241]  7 in 0.000s (connected 0, loaded 0)
+I20260322 23:45:22.918562 49604 database_cache.cc:255] Loading pose priors...
+I20260322 23:45:22.918573 49604 database_cache.cc:263]  0 in 0.000s
+I20260322 23:45:22.918578 49604 database_cache.cc:271] Building correspondence graph...
+I20260322 23:45:22.918590 49604 database_cache.cc:300]  in 0.000s (ignored 0)
+I20260322 23:45:22.918596 49604 timer.cc:90] Elapsed time: 0.000 [minutes]
+W20260322 23:45:22.918607 49604 incremental_pipeline.cc:302] No images with matches
+E20260322 23:45:22.919103 49604 sfm.cc:279] Failed to create any sparse model
+ERROR:root:Mapper failed with code 1. Exiting.
+ERROR: COLMAP preparation exited with code 1.
