@@ -1,0 +1,13 @@
+data/exports/
+data/job-logs/
+data/uploads/
+data/torch_extensions/
+data/v2/
+data/v2/cache/
+data/v2/exports/
+data/v2/logs/
+data/v2/uploads/
+**/__pycache__/
+*.pyc
+v2-start.out.log
+v2-start.err.log

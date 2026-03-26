@@ -1,5 +1,581 @@
 [
   {
+    "id": "project-1774359063217-rg7qmg",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 50000,
+    "videoFrameTarget": 64,
+    "notes": "",
+    "createdAt": "2026-03-24T13:31:03.217Z",
+    "updatedAt": "2026-03-24T14:11:22.797Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774359063284-6nj9c8",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-24T13:31:03.284Z",
+        "previewUrl": "/uploads/project-1774359063217-rg7qmg/1774359063281-vidu-video-3217097658521949.mp4",
+        "storedName": "1774359063281-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-24T14:11:22.797Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and gsplat pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774359063217-rg7qmg/1774359063281-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 64,
+        "targetVideoFrames": 64,
+        "status": "splat-ready",
+        "engine": "nerfstudio-gsplat",
+        "exportTargets": [
+          "preview",
+          "gsplat-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774359067720-xve6n8",
+        "targetIterations": 50000,
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774359063217-rg7qmg-test",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774359063217-rg7qmg-test\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774359063217-rg7qmg-test\\model\\ply\\point_cloud_49999.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774359063217-rg7qmg.splat",
+        "splatUrl": "/exports/project-1774359063217-rg7qmg.splat"
+      },
+      "warnings": [
+        "Video input was converted into 64 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774358428326-4hc4cm",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 50000,
+    "videoFrameTarget": 64,
+    "notes": "",
+    "createdAt": "2026-03-24T13:20:28.326Z",
+    "updatedAt": "2026-03-24T13:26:49.627Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774358428430-w50677",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-24T13:20:28.430Z",
+        "previewUrl": "/uploads/project-1774358428326-4hc4cm/1774358428425-vidu-video-3217097658521949.mp4",
+        "storedName": "1774358428425-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774353729563-8v45vw",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 120,
+    "notes": "",
+    "createdAt": "2026-03-24T12:02:09.563Z",
+    "updatedAt": "2026-03-24T13:17:06.184Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774353729661-myb9it",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-24T12:02:09.661Z",
+        "previewUrl": "/uploads/project-1774353729563-8v45vw/1774353729657-vidu-video-3217097658521949.mp4",
+        "storedName": "1774353729657-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-24T13:17:06.185Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and gsplat pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774353729563-8v45vw/1774353729657-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 120,
+        "targetVideoFrames": 120,
+        "status": "splat-ready",
+        "engine": "nerfstudio-gsplat",
+        "exportTargets": [
+          "preview",
+          "gsplat-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774353737920-5g7j5f",
+        "targetIterations": 30000,
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774353729563-8v45vw-test",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774353729563-8v45vw-test\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774353729563-8v45vw-test\\model\\ply\\point_cloud_29999.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774353729563-8v45vw.splat",
+        "splatUrl": "/exports/project-1774353729563-8v45vw.splat"
+      },
+      "warnings": [
+        "Video input was converted into 120 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774281640975-acqqn0",
+    "name": "テスト",
+    "mode": "multi",
+    "subjectType": "room",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 120,
+    "notes": "",
+    "createdAt": "2026-03-23T16:00:40.975Z",
+    "updatedAt": "2026-03-24T00:19:24.772Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774281641040-sg7f8f",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T16:00:41.040Z",
+        "previewUrl": "/uploads/project-1774281640975-acqqn0/1774281641037-vidu-video-3217097658521949.mp4",
+        "storedName": "1774281641037-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-24T00:19:24.772Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and gsplat pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774281640975-acqqn0/1774281641037-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 120,
+        "targetVideoFrames": 120,
+        "status": "splat-ready",
+        "engine": "nerfstudio-gsplat",
+        "exportTargets": [
+          "preview",
+          "gsplat-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774281646204-dzf6n3",
+        "targetIterations": 30000,
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774281640975-acqqn0----",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774281640975-acqqn0----\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774281640975-acqqn0----\\model\\ply\\point_cloud_29999.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774281640975-acqqn0.splat",
+        "splatUrl": "/exports/project-1774281640975-acqqn0.splat"
+      },
+      "warnings": [
+        "Video input was converted into 120 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774276988451-vssum3",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 120,
+    "notes": "",
+    "createdAt": "2026-03-23T14:43:08.451Z",
+    "updatedAt": "2026-03-23T14:48:26.520Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774276988520-5wdsfk",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T14:43:08.520Z",
+        "previewUrl": "/uploads/project-1774276988451-vssum3/1774276988517-vidu-video-3217097658521949.mp4",
+        "storedName": "1774276988517-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774275908820-2ikdbo",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 180,
+    "notes": "",
+    "createdAt": "2026-03-23T14:25:08.821Z",
+    "updatedAt": "2026-03-23T14:43:03.073Z",
+    "status": "paused",
+    "assets": [
+      {
+        "id": "asset-1774275908942-wlg1p0",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T14:25:08.942Z",
+        "previewUrl": "/uploads/project-1774275908820-2ikdbo/1774275908940-vidu-video-3217097658521949.mp4",
+        "storedName": "1774275908940-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774275366394-u87eq3",
+    "name": "Untitled Project",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 300,
+    "notes": "",
+    "createdAt": "2026-03-23T14:16:06.394Z",
+    "updatedAt": "2026-03-23T14:31:36.098Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774275366492-hhnsye",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T14:16:06.492Z",
+        "previewUrl": "/uploads/project-1774275366394-u87eq3/1774275366490-vidu-video-3217097658521949.mp4",
+        "storedName": "1774275366490-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774274223397-1wv5lr",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 300,
+    "notes": "",
+    "createdAt": "2026-03-23T13:57:03.397Z",
+    "updatedAt": "2026-03-23T14:02:02.057Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774274223522-vu2lsz",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T13:57:03.522Z",
+        "previewUrl": "/uploads/project-1774274223397-1wv5lr/1774274223517-vidu-video-3217097658521949.mp4",
+        "storedName": "1774274223517-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774272327505-nnk68b",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 120,
+    "notes": "",
+    "createdAt": "2026-03-23T13:25:27.505Z",
+    "updatedAt": "2026-03-23T13:44:18.237Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774272327613-m1nf4u",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T13:25:27.613Z",
+        "previewUrl": "/uploads/project-1774272327505-nnk68b/1774272327609-vidu-video-3217097658521949.mp4",
+        "storedName": "1774272327609-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-23T13:44:18.237Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and Gaussian Splatting pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774272327505-nnk68b/1774272327609-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 97,
+        "targetVideoFrames": 120,
+        "status": "splat-ready",
+        "engine": "graphdeco-inria-gaussian-splatting",
+        "exportTargets": [
+          "preview",
+          "gaussian-splatting-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774272331725-54xhj3",
+        "targetIterations": 30000,
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774272327505-nnk68b-test",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774272327505-nnk68b-test\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774272327505-nnk68b-test\\model\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774272327505-nnk68b.splat",
+        "splatUrl": "/exports/project-1774272327505-nnk68b.splat"
+      },
+      "warnings": [
+        "Video input was converted into 97 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774272261303-1zqztn",
+    "name": "frame-target-test",
+    "mode": "multi",
+    "subjectType": "object",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "videoFrameTarget": 240,
+    "notes": "",
+    "createdAt": "2026-03-23T13:24:21.303Z",
+    "updatedAt": "2026-03-23T13:24:21.303Z",
+    "status": "draft",
+    "assets": [],
+    "output": null
+  },
+  {
+    "id": "project-1774271053424-61j2bk",
+    "name": "test",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "notes": "",
+    "createdAt": "2026-03-23T13:04:13.424Z",
+    "updatedAt": "2026-03-23T13:10:43.724Z",
+    "status": "failed",
+    "assets": [
+      {
+        "id": "asset-1774271053500-01gbw1",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T13:04:13.500Z",
+        "previewUrl": "/uploads/project-1774271053424-61j2bk/1774271053497-vidu-video-3217097658521949.mp4",
+        "storedName": "1774271053497-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": null
+  },
+  {
+    "id": "project-1774269683593-siyayy",
+    "name": "Untitled Project",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "trainingSteps": 30000,
+    "notes": "",
+    "createdAt": "2026-03-23T12:41:23.593Z",
+    "updatedAt": "2026-03-23T12:52:50.500Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774269683694-swtfsw",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T12:41:23.694Z",
+        "previewUrl": "/uploads/project-1774269683593-siyayy/1774269683691-vidu-video-3217097658521949.mp4",
+        "storedName": "1774269683691-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-23T12:52:50.500Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and Gaussian Splatting pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774269683593-siyayy/1774269683691-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 32,
+        "status": "splat-ready",
+        "engine": "graphdeco-inria-gaussian-splatting",
+        "exportTargets": [
+          "preview",
+          "gaussian-splatting-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774269694539-fx9qgh",
+        "targetIterations": 30000,
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774269683593-siyayy-Untitled-Project",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774269683593-siyayy-Untitled-Project\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774269683593-siyayy-Untitled-Project\\model\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774269683593-siyayy.splat",
+        "splatUrl": "/exports/project-1774269683593-siyayy.splat"
+      },
+      "warnings": [
+        "Video input was converted into 32 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774269526806-zno6hl",
+    "name": "step-propagation-test",
+    "mode": "multi",
+    "subjectType": "object",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "trainingSteps": 50000,
+    "notes": "",
+    "createdAt": "2026-03-23T12:38:46.806Z",
+    "updatedAt": "2026-03-23T12:38:46.851Z",
+    "status": "draft",
+    "assets": [],
+    "output": null
+  },
+  {
+    "id": "project-1774269513609-ktm59c",
+    "name": "step-propagation-test",
+    "mode": "multi",
+    "subjectType": "object",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "trainingSteps": 50000,
+    "notes": "",
+    "createdAt": "2026-03-23T12:38:33.609Z",
+    "updatedAt": "2026-03-23T12:38:33.652Z",
+    "status": "draft",
+    "assets": [],
+    "output": null
+  },
+  {
+    "id": "project-1774267743218-4siqip",
+    "name": "Untitled Project",
+    "mode": "multi",
+    "subjectType": "other",
+    "qualityPreset": "high",
+    "backgroundMode": "keep",
+    "notes": "",
+    "createdAt": "2026-03-23T12:09:03.219Z",
+    "updatedAt": "2026-03-23T12:22:57.321Z",
+    "status": "completed",
+    "assets": [
+      {
+        "id": "asset-1774267743294-2n37tn",
+        "name": "vidu-video-3217097658521949.mp4",
+        "size": 4091375,
+        "mimeType": "video/mp4",
+        "uploadedAt": "2026-03-23T12:09:03.294Z",
+        "previewUrl": "/uploads/project-1774267743218-4siqip/1774267743292-vidu-video-3217097658521949.mp4",
+        "storedName": "1774267743292-vidu-video-3217097658521949.mp4"
+      }
+    ],
+    "output": {
+      "generatedAt": "2026-03-23T12:22:57.322Z",
+      "quality": "Standard",
+      "summary": "The local COLMAP and Gaussian Splatting pipeline finished and a .splat package is ready.",
+      "viewer": {
+        "cameraMode": "orbit-wide",
+        "recommendedSpinSeconds": 14,
+        "previewAssets": [
+          "/uploads/project-1774267743218-4siqip/1774267743292-vidu-video-3217097658521949.mp4"
+        ]
+      },
+      "packageInfo": {
+        "mode": "multi",
+        "assetCount": 1,
+        "usedVideoInput": true,
+        "extractedFrameCount": 32,
+        "status": "splat-ready",
+        "engine": "graphdeco-inria-gaussian-splatting",
+        "exportTargets": [
+          "preview",
+          "gaussian-splatting-training-output",
+          ".splat"
+        ],
+        "sourceJobId": "job-1774267775723-hm80x7",
+        "sceneDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774267743218-4siqip-Untitled-Project",
+        "modelDir": "C:\\GaussianSplatting\\RAW_Data\\project-1774267743218-4siqip-Untitled-Project\\model",
+        "plyPath": "C:\\GaussianSplatting\\RAW_Data\\project-1774267743218-4siqip-Untitled-Project\\model\\point_cloud\\iteration_30000\\point_cloud.ply",
+        "splatPath": "C:\\WebApp\\GaussianSplattingMaker\\data\\exports\\project-1774267743218-4siqip.splat",
+        "splatUrl": "/exports/project-1774267743218-4siqip.splat"
+      },
+      "warnings": [
+        "Video input was converted into 32 frame(s) before reconstruction."
+      ]
+    }
+  },
+  {
+    "id": "project-1774267641363-xjr0b5",
+    "name": "steps-test",
+    "mode": "multi",
+    "subjectType": "object",
+    "qualityPreset": "standard",
+    "backgroundMode": "keep",
+    "trainingSteps": 15000,
+    "notes": "",
+    "createdAt": "2026-03-23T12:07:21.363Z",
+    "updatedAt": "2026-03-23T12:07:21.364Z",
+    "status": "draft",
+    "assets": [],
+    "output": null
+  },
+  {
     "id": "project-1774191388820-xnudys",
     "name": "Real Single Image Relaxed Mapper 3",
     "mode": "single",

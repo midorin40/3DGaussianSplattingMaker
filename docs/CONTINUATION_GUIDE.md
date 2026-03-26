@@ -1,37 +1,94 @@
-﻿# 継続ガイド
+# Continuation Guide
 
-このプロジェクトフォルダを別の場所へ移動した後でも、次回の作業で継続しやすいように現状を整理する。
+## Start Here
 
-## 1. プロジェクトの中心
-移動対象のプロジェクトフォルダはこの Web アプリ側。
+Read these first:
 
-- 現在: `C:\WebApp\GaussianSplattingMaker`
+- [README.md](/C:/WebApp/GaussianSplattingMaker/README.md)
+- [docs/REQUIREMENTS.md](/C:/WebApp/GaussianSplattingMaker/docs/REQUIREMENTS.md)
+- [docs/SPECIFICATION.md](/C:/WebApp/GaussianSplattingMaker/docs/SPECIFICATION.md)
+- [docs/OLD_SYSTEM.md](/C:/WebApp/GaussianSplattingMaker/docs/OLD_SYSTEM.md)
+- [docs/ARCHITECTURE_V2.md](/C:/WebApp/GaussianSplattingMaker/docs/ARCHITECTURE_V2.md)
+- [docs/V2_DATA_MODEL.md](/C:/WebApp/GaussianSplattingMaker/docs/V2_DATA_MODEL.md)
+- [docs/V2_SPECIFICATION.md](/C:/WebApp/GaussianSplattingMaker/docs/V2_SPECIFICATION.md)
+- [data/local-stack.json](/C:/WebApp/GaussianSplattingMaker/data/local-stack.json)
 
-ただし、実際の GS 実行スタックは別フォルダにある。
+## Current Position
 
-- `C:\GaussianSplatting`
+- The existing runnable app is now the `old` system.
+- The migration target is to freeze it into `old_archive` rather than delete it immediately.
+- New design work should be evaluated against `v2`.
+- The current product concept remains local-first: Web UI as interface, processing on the local machine.
 
-そのため、Web アプリのフォルダだけ移動しても、ローカル GS スタックの場所が変わらない限り、`data/local-stack.json` の内容が正しければ継続可能。
+## Old System Notes
 
-## 2. 次回継続時に最初に確認するファイル
-- `docs/SPECIFICATION.md`
-- `docs/IMPLEMENTATION_LOG.md`
-- `data/local-stack.json`
-- `server.js`
-- `public/app.js`
-- `public/index.html`
+- The current runtime is still centered on [server.js](/C:/WebApp/GaussianSplattingMaker/server.js).
+- It supports single-image, multi-image, and video input.
+- It supports `.splat` export and job pause/resume.
+- It should be preserved as the migration baseline.
+- Treat it as read-only after `v2` reaches parity.
 
-## 3. フォルダ移動後に確認すること
+## V2 Direction
 
-### 3.1 Web アプリ自体
-移動後の新しい場所で以下を実行。
+The active redesign direction is:
+
+- split `single` and `multi/video` pipelines early,
+- add an input optimizer,
+- move toward artifact-based outputs,
+- support `ply`, `splat`, and `ksplat`,
+- optimize for precision first and speed second.
+
+## V2 Current Reality
+
+What is already implemented in `v2`:
+
+- domain models for `project / job / artifact`
+- file-based `v2` persistence
+- single and multi/video pipeline planning
+- multi/video input optimizer scaffold
+- run preparation manifest generation
+- canonical artifact bundle scaffold generation
+- minimal REST API for project, asset, job, and artifact access
+- `pause / resume` state transitions at the API/state level
+
+What is not implemented yet in `v2`:
+
+- real reconstruction execution
+- real trainer execution
+- real exporter execution
+- browser-facing `v2` UI
+
+## Restart Reminder
+
+If [server.js](/C:/WebApp/GaussianSplattingMaker/server.js) is changed, restart the running Node process.
+
+Check the port:
+
+```powershell
+netstat -ano | findstr :3100
+```
+
+Stop if needed:
+
+```powershell
+Stop-Process -Id <PID> -Force
+```
+
+Start again:
 
 ```powershell
 npm start
 ```
 
-### 3.2 ローカル GS スタック参照先
-`data/local-stack.json` に記載された以下のパスが実在すること。
+If [v2/server.js](/C:/WebApp/GaussianSplattingMaker/v2/server.js) is being tested directly:
+
+```powershell
+npm run start:v2
+```
+
+## Local Stack Check
+
+Verify these keys exist in [data/local-stack.json](/C:/WebApp/GaussianSplattingMaker/data/local-stack.json):
 
 - `gaussianSplattingRoot`
 - `repoPath`
@@ -39,44 +96,10 @@ npm start
 - `envPath`
 - `scriptsPath`
 
-もし `C:\GaussianSplatting` 側も移動した場合は、必ず `data/local-stack.json` を新しいパスへ書き換えること。
+## Next Recommended Work
 
-## 4. 現時点での実装境界
-
-### Web アプリ側でやること
-- プロジェクト管理
-- 画像アップロード
-- ジョブ開始
-- ログ表示
-- ローカル実行環境への橋渡し
-
-### ローカル GS スタック側でやること
-- COLMAP 前処理
-- Gaussian Splatting 学習
-- 将来的な viewer / 出力処理
-
-## 5. 現在の重要な事実
-- 複数画像モードはローカルスクリプト起動まで接続済み
-- 単画像モードはスキャフォールドのみ
-- 動画モードは未実装
-- 404 だったアップロード画像の配信は修正済み
-- COLMAP 4.0.2 への CLI 差分対応も済み
-
-## 6. 次回の最優先タスク候補
-1. 正常な複数画像セットで end-to-end 検証
-2. `train.py` 成功時の output ディレクトリ確認
-3. 生成結果を UI に結びつける
-4. 単画像 GS エンジン候補を選定して接続する
-
-## 7. 次回指示の出し方の例
-移動後のフォルダで、次のように指示すれば継続しやすい。
-
-- `docs/SPECIFICATION.md と docs/IMPLEMENTATION_LOG.md を読んで続きから進めてください`
-- `local-stack.json を見て複数画像モードの実走確認をしてください`
-- `単画像モードの実エンジン接続を進めてください`
-
-## 8. 補足
-もし Web アプリの移動先が変わっても、ローカル GS スタックをそのまま `C:\GaussianSplatting` に残す運用なら、基本的には `local-stack.json` をそのまま使える。
-
-逆に、`C:\GaussianSplatting` 側も一緒に移動する場合は、
-`data/local-stack.json` の書き換えが最重要になる。
+1. Add richer `v2` job lifecycle handling beyond simple scaffold state transitions.
+2. Implement actual `single` preparation execution inside `v2`.
+3. Implement actual `multi/video` preparation execution inside `v2`.
+4. Connect reconstruction, training, and exporter adapters to the artifact bundle flow.
+5. Add a browser-facing `v2` UI or compatibility API layer once execution paths exist.
