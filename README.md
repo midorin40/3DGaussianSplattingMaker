@@ -1,113 +1,81 @@
 # GaussianSplattingMaker
 
-GaussianSplattingMaker は、画像または動画からローカルの Gaussian Splatting パイプラインを実行し、`.splat` データを生成・管理する軽量 Web アプリです。
+ローカルの Gaussian Splatting 実行環境を Web UI から操作するためのプロジェクト管理アプリです。
 
-本プロジェクトは、厳密な3D再構成専用ではなく、`.splat` をローカルで生成して表示・検証・配布しやすくすることを重視しています。単一画像モードも、完全な3D化ではなく、表示向け `.splat` の生成を含む用途を前提にしています。
+単なるアップロード画面ではなく、プロジェクト作成から素材管理、ジョブ実行、ログ確認、`.splat` 出力までを一貫して扱えるように設計しています。
 
-## 現在の機能
+## Portfolio Highlights
 
-- 単一画像モードと複数画像モード
-- 画像アップロード
-- 動画アップロードと自動フレーム抽出
-- 単一画像からの擬似ビュー生成
-- ローカル COLMAP / Gaussian Splatting 実行
-- `point_cloud.ply` から `.splat` への変換
-- ジョブ進行表示
-- 実行ログ表示
-- 学習中断
-- 学習再開
-- 学習ステップ指定
-- 動画の目標フレーム数指定
-- プロジェクト履歴保存
+- ローカル前提のワークフローを Web アプリとして整理
+- 単一画像、複数画像、動画の入力を同じ UI で扱えるように統合
+- COLMAP / 学習 / export をジョブとして扱い、中断・再開に対応
+- ファイルベースの永続化で、外部 DB に依存しない構成を採用
+- 実行中ジョブの状態をファイルで保持し、再開可能な運用を実現
 
-## 動作概要
+## What It Does
 
-### 複数画像 / 動画モード
+- プロジェクト作成
+- 画像 / 動画アップロード
+- 動画フレーム抽出
+- 学習ジョブの開始
+- 学習中断 / 再開
+- `.ply` から `.splat` への export
+- プロジェクトとジョブの履歴管理
 
-1. アップロードした画像または動画を `data/uploads/` に保存
-2. 動画の場合は FFmpeg でフレーム抽出
-3. 抽出フレームを目標フレーム数まで均等間引き
-4. `C:\GaussianSplatting\RAW_Data\<scene>` にステージング
-5. `prepare_colmap_scene.bat` を実行
-6. `train_scene.bat` を実行
-7. `point_cloud.ply` を `.splat` に変換
-8. `data/exports/` に保存
+## Tech Stack
 
-### 単一画像モード
+- Node.js
+- vanilla JavaScript
+- file-based JSON storage
+- local process orchestration via batch scripts
+- FFmpeg
+- COLMAP / Gaussian Splatting tooling
 
-単一画像モードは、1枚画像をそのまま3D再構成するのではなく、擬似ビューを生成して `.splat` 表示向けの入力へ接続する構成です。
+## Architecture
 
-## 学習ステップ
+- `server.js`
+  - HTTP API とジョブ制御の中心
+- `storage/`
+  - JSON ベースの保存層
+- `run/`
+  - 実行用ディレクトリとランタイム準備
+- `pipelines/`
+  - 単一画像 / 複数画像 / 動画のパイプライン定義
+- `domain/`
+  - project / job / artifact のデータモデル
 
-UI から以下を選択できます。
+## Runtime Data
 
-- `7000`
-- `15000`
-- `30000`
-- `50000`
+正規の保存先は `data/runtime/` です。
 
-開始時に選んだ値がジョブの `targetIterations` として使用されます。中断後に再開した場合も引き継がれます。
+- `data/runtime/projects/projects.json`
+- `data/runtime/jobs/jobs.json`
+- `data/runtime/artifacts/artifacts.json`
+- `data/runtime/uploads/`
+- `data/runtime/logs/`
+- `data/runtime/exports/`
 
-## 動画フレーム制御
-
-動画は品質プリセットに応じた FPS で抽出したあと、目標フレーム数まで均等間引きして COLMAP に渡します。
-
-抽出 FPS:
-
-- `fast`: `8fps`
-- `standard`: `12fps`
-- `high`: `24fps`
-
-目標フレーム数:
-
-- `64`
-- `96`
-- `120`
-- `180`
-- `240`
-- `300`
-
-## 学習中断 / 再開
-
-- 実行中ジョブは UI から中断できます
-- 中断時はプロセスツリーを停止し、ジョブ状態を `paused` に保存します
-- 再開時は可能なら最新の `chkpnt*.pth` から継続します
-- 学習完了後に中断していた場合は export フェーズから再開します
-
-## ローカル構成
-
-- Web アプリ: `C:\WebApp\GaussianSplattingMaker`
-- GS 実行環境: `C:\GaussianSplatting`
-- 設定ファイル: `C:\WebApp\GaussianSplattingMaker\data\local-stack.json`
-
-## 起動
+## Run
 
 ```powershell
 npm start
 ```
 
-ブラウザで `http://localhost:3100` を開きます。
+ブラウザで `http://localhost:3200` を開きます。
 
-## API
+## Design Notes
 
-- `GET /api/status`
-- `GET /api/projects`
-- `POST /api/projects`
-- `GET /api/projects/:id`
-- `POST /api/projects/:id/assets`
-- `POST /api/projects/:id/generate`
-- `GET /api/jobs/:id`
-- `POST /api/jobs/:id/pause`
-- `POST /api/jobs/:id/resume`
+- UI はローカル作業の進行を見やすくすることを優先
+- 実行中ジョブは状態をファイルに保存
+- export までの流れを API として追跡可能に設計
 
-## 制約
+## Known Constraints
 
-- 単一画像モードは観測情報が1枚分しかないため、背面や隠れた面は推定になります
-- 複数画像 / 動画モードでも、入力品質が低いと COLMAP と学習結果は不安定になります
-- `.splat` が生成済みでも、ビューア側の対応状況によっては正常表示されない場合があります
+- 単一画像モードは観測情報が少ないため、推定誤差を含みます。
+- 入力品質が低いと COLMAP と学習結果は不安定になります。
+- `.splat` の表示結果はビューア側の対応状況に依存します。
 
-## 関連ドキュメント
+## References
 
-- 要件定義: [`docs/REQUIREMENTS.md`](/C:/WebApp/GaussianSplattingMaker/docs/REQUIREMENTS.md)
-- 仕様書: [`docs/SPECIFICATION.md`](/C:/WebApp/GaussianSplattingMaker/docs/SPECIFICATION.md)
-- 継続ガイド: [`docs/CONTINUATION_GUIDE.md`](/C:/WebApp/GaussianSplattingMaker/docs/CONTINUATION_GUIDE.md)
+- [docs/SPECIFICATION.md](/C:/WebApp/GaussianSplattingMaker/docs/SPECIFICATION.md)
+- [docs/CONTINUATION_GUIDE.md](/C:/WebApp/GaussianSplattingMaker/docs/CONTINUATION_GUIDE.md)

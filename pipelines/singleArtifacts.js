@@ -5,19 +5,19 @@
   "ksplat",
   "preview",
   "metrics",
-]);
+])
 
 function createSingleSceneBundlePlan(project = {}, context = {}) {
-  const projectId = project.id || context.projectId || null;
-  const bundleId = context.bundleId || null;
-  const assetCount = Array.isArray(project.assets) ? project.assets.length : 0;
-  const qualityPreset = project.qualityPreset || "standard";
+  const projectId = project.id || context.projectId || null
+  const bundleId = context.bundleId || null
+  const assetCount = Array.isArray(project.assets) ? project.assets.length : 0
+  const qualityPreset = project.qualityPreset || "standard"
 
   return {
     bundleKind: "single_scene",
     projectId,
     bundleId,
-    rootHint: projectId ? `data/v2/artifacts/${projectId}` : "data/v2/artifacts/<projectId>",
+    rootHint: projectId ? `data/runtime/artifacts/${projectId}` : "data/runtime/artifacts/<projectId>",
     inputShape: {
       assetCount,
       usesSyntheticViews: true,
@@ -31,14 +31,14 @@ function createSingleSceneBundlePlan(project = {}, context = {}) {
       generateDepthPrior: true,
       generateNormalPrior: true,
     },
-  };
+  }
 }
 
 function planSingleArtifacts(project = {}, job = {}, bundlePlan = {}) {
-  const projectId = project.id || job.projectId || bundlePlan.projectId || null;
+  const projectId = project.id || job.projectId || bundlePlan.projectId || null
   const artifactBasePath = projectId
-    ? `data/v2/artifacts/${projectId}/<artifactId>`
-    : "data/v2/artifacts/<projectId>/<artifactId>";
+    ? `data/runtime/artifacts/${projectId}/<artifactId>`
+    : "data/runtime/artifacts/<projectId>/<artifactId>"
 
   return [
     {
@@ -83,19 +83,19 @@ function planSingleArtifacts(project = {}, job = {}, bundlePlan = {}) {
       path: `${artifactBasePath}/exports/model.ksplat`,
       label: "Compressed ksplat export",
     },
-  ];
+  ]
 }
 
 function buildSingleArtifactPlan(project = {}, job = {}, context = {}) {
-  const sceneBundle = createSingleSceneBundlePlan(project, context);
-  const artifacts = planSingleArtifacts(project, job, sceneBundle);
+  const sceneBundle = createSingleSceneBundlePlan(project, context)
+  const artifacts = planSingleArtifacts(project, job, sceneBundle)
   return {
     sceneBundle,
     artifacts,
     canonicalFormat: "ply",
     availableFormats: ["ply", "splat", "ksplat"],
     kinds: SINGLE_ARTIFACT_KINDS,
-  };
+  }
 }
 
 module.exports = {
@@ -103,4 +103,4 @@ module.exports = {
   createSingleSceneBundlePlan,
   planSingleArtifacts,
   buildSingleArtifactPlan,
-};
+}

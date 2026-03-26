@@ -1,26 +1,26 @@
-﻿const { createProject } = require("./domain/project");
-const { createJob } = require("./domain/job");
-const { createArtifact } = require("./domain/artifact");
-const { openV2Storage, getV2Paths, writeJsonFile } = require("./storage");
+﻿const { createProject } = require("./domain/project")
+const { createJob } = require("./domain/job")
+const { createArtifact } = require("./domain/artifact")
+const { openRuntimeStorage, getRuntimePaths, writeJsonFile } = require("./storage")
 const {
   createSinglePipelinePlan,
   createSingleSceneBundlePlan,
   buildSingleArtifactPlan,
   createMultiVideoPipelinePlan,
   resolvePipeline,
-} = require("./pipelines");
+} = require("./pipelines")
 const {
   prepareSingleRun,
   prepareMultiVideoRun,
   prepareRun,
-} = require("./run");
+} = require("./run")
 
 module.exports = {
   createProject,
   createJob,
   createArtifact,
-  openV2Storage,
-  getV2Paths,
+  openRuntimeStorage,
+  getRuntimePaths,
   writeJsonFile,
   createSinglePipelinePlan,
   createSingleSceneBundlePlan,
@@ -30,4 +30,4 @@ module.exports = {
   prepareSingleRun,
   prepareMultiVideoRun,
   prepareRun,
-};
+}

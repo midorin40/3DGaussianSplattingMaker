@@ -1,4 +1,8 @@
-# V2 Specification
+# Legacy V2 Specification
+
+This document is a historical design reference.
+
+The active implementation now lives at the repository root and uses `data/runtime/` as the normal storage root.
 
 ## 1. Purpose
 
@@ -217,7 +221,7 @@ Derived outputs:
 
 ## 8. Storage Layout
 
-Primary storage root:
+Historical storage root used by the old design:
 
 - `data/v2/`
 

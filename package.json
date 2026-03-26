@@ -2,9 +2,9 @@
   "name": "gaussian-splatting-maker",
   "version": "0.1.0",
   "private": true,
-  "description": "A lightweight web app for planning Gaussian Splatting projects with Gemini and Codex.",
+  "description": "Local-first Gaussian Splatting project manager with resumable jobs and artifact export.",
   "scripts": {
-    "start": "node v2/server.js",
-    "start:v2": "node v2/server.js"
+    "start": "node server.js",
+    "start:old": "node old_archive/server.js"
   }
 }

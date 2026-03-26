@@ -1,4 +1,8 @@
-# V2 Data Model
+# Legacy V2 Data Model
+
+This document is a historical design reference.
+
+The active implementation now uses the root runtime layout described in [docs/SPECIFICATION.md](/C:/WebApp/GaussianSplattingMaker/docs/SPECIFICATION.md).
 
 ## Scope
 
